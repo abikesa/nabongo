@@ -2,7 +2,7 @@ format: jb-book
 root: intro.ipynb
 title: Play
 parts:
-  - caption: Part 1
+  - caption:  
     chapters:
       - file: act_0/act_0_0/act_0_0_0/act_0_0_0_1.ipynb
       - file: act_0/act_0_0/act_0_0_0/act_0_0_0_2.ipynb
@@ -46,7 +46,7 @@ parts:
       - file: act_0/act_0_2/act_0_2_1/act_0_2_1_5.ipynb
       - file: act_0/act_0_2/act_0_2_1/act_0_2_1_6.ipynb
       - file: act_0/act_0_2/act_0_2_1/act_0_2_1_7.ipynb
-  - caption: Part 2
+  - caption: Part 1
     chapters:
       - file: act_1/act_1_0/act_1_0_0/act_1_0_0_1.ipynb
       - file: act_1/act_1_0/act_1_0_0/act_1_0_0_2.ipynb
@@ -90,7 +90,7 @@ parts:
       - file: act_1/act_1_2/act_1_2_1/act_1_2_1_5.ipynb
       - file: act_1/act_1_2/act_1_2_1/act_1_2_1_6.ipynb
       - file: act_1/act_1_2/act_1_2_1/act_1_2_1_7.ipynb
-  - caption: Part 3
+  - caption: Part 2
     chapters:
       - file: act_2/act_2_0/act_2_0_0/act_2_0_0_1.ipynb
       - file: act_2/act_2_0/act_2_0_0/act_2_0_0_2.ipynb
@@ -134,7 +134,7 @@ parts:
       - file: act_2/act_2_2/act_2_2_1/act_2_2_1_5.ipynb
       - file: act_2/act_2_2/act_2_2_1/act_2_2_1_6.ipynb
       - file: act_2/act_2_2/act_2_2_1/act_2_2_1_7.ipynb
-  - caption: Part 4
+  - caption: Part 3
     chapters:
       - file: act_3/act_3_0/act_3_0_0/act_3_0_0_1.ipynb
       - file: act_3/act_3_0/act_3_0_0/act_3_0_0_2.ipynb
