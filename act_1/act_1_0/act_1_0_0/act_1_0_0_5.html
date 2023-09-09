@@ -666,11 +666,11 @@ document.write(`
         &emsp;2. <span class="expanded-word">Dramatic arc</span> is the slope leading us to the new group average.  
     </p>
     <p>
-        &emsp;3. Think: <span style="text-decoration: underline; cursor: pointer;" onclick="toggleExpand();">F. Gary Gray</span> from Compton to Hollywood.
+        &emsp;3. Think: <span class="expanded-word" onclick="toggleExpand('gary')">F. Gary Gray</span> from Compton to Hollywood.
     </p>
-    <div class="expanded-info">
+    <div id="gary" class="expanded-info">
         <p>
-            F. Gary Gray is a highly acclaimed director known for his work in both film and music videos. He rose to prominence with groundbreaking music videos for artists like Ice Cube and Dr. Dre. Gray's talent and creativity eventually led him to the world of feature films, where he directed successful movies like "Straight Outta Compton" and "The Fate of the Furious." His journey from Compton to becoming a Hollywood elite showcases his remarkable career in the entertainment industry.
+            &emsp;&emsp; F. Gary Gray is a highly acclaimed director known for his work in both film and music videos. He rose to &emsp;&emsp; prominence with groundbreaking music videos for artists like Ice Cube and Dr. Dre. Gray's talent and &emsp;&emsp; creativity eventually led him to the world of feature films, where he directed successful movies like &emsp;&emsp; &emsp;&emsp; "Straight Outta Compton" and "The Fate of the Furious." His journey from Compton to becoming a &emsp;&emsp; &emsp;&emsp; Hollywood elite showcases his remarkable career in the entertainment industry.
         </p>
     </div>
 </body>
@@ -723,10 +723,14 @@ To illustrate these components, let’s consider F. Gary Gray’s journey. He st
         .expanded-info {
             display: none;
         }
+        span.expanded-word {
+            text-decoration: underline;
+            cursor: pointer;
+        }
     </style>
     <script>
-        function toggleExpand() {
-            var expandedInfo = document.querySelector('.expanded-info');
+        function toggleExpand(elementId) {
+            var expandedInfo = document.getElementById(elementId);
             if (expandedInfo.style.display === 'none' || expandedInfo.style.display === '') {
                 expandedInfo.style.display = 'block';
             } else {
@@ -737,14 +741,13 @@ To illustrate these components, let’s consider F. Gary Gray’s journey. He st
 </head>
 <body>
     <p>
-        &emsp;1. <span style="text-decoration: underline; cursor: pointer;" onclick="toggleExpand();">hasidic</span> jews in brooklyn. 
+        &emsp;1. <span class="expanded-word" onclick="toggleExpand('hasidic')">hasidic</span> jews in brooklyn. 
     </p>
-    <div class="expanded-info">
-        <p>
-            + dress and speak like 18th century eastern europeans.
-            + high intra-marriage rates -> low **within** group variance
-            + passage of time -> high **between** group variance
-        </p>
+    <div id="hasidic" class="expanded-info">   
+        &emsp;&emsp; &emsp;&emsp; dress & speak like 18th century eastern europeans <br>
+        &emsp;&emsp; &emsp;&emsp; high intra-marriage rates -> low <b>within</b> group variance <br>
+        &emsp;&emsp; &emsp;&emsp; passage of time -> high <b>between</b> group variance <br>
+        &emsp; 
     </div>
     <p>
         &emsp;2. <span class="expanded-word">amish</span> in pennsylvania.    
