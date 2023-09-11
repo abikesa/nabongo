@@ -254,6 +254,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
+
 <li class="toctree-l1"><a class="reference internal" href="../act_1_0_1/act_1_0_1_1.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../act_1_0_1/act_1_0_1_2.html">.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../act_1_0_1/act_1_0_1_3.html">.</a></li>
@@ -532,15 +533,10 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">37</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">38</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">39</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">40</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchical-models">Hierarchical Models</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinary-regression">Ordinary Regression</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps:</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">40</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><code class="docutils literal notranslate"><span class="pre">41</span></code></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">42</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">43</a></li>
 </ul>
 
             </nav>
@@ -681,28 +677,8 @@ document.write(`
 <li><p>process (hierarchical) vs. variance (assuming icc = 0)</p></li>
 </ul>
 <p>Ah, if you’re interested in analytic decisions rather than raters’ reliability, the use of ICC takes on a different flavor. The decision to use hierarchical models or ordinary regression largely depends on the structure of your data and the specific research questions you are asking.</p>
-<section id="hierarchical-models">
-<h2>Hierarchical Models<a class="headerlink" href="#hierarchical-models" title="Permalink to this heading">#</a></h2>
 <p>Hierarchical models are particularly useful when your data has multiple levels of grouping, such as patients within hospitals or repeated measurements on the same subjects over time. They allow you to explicitly model variance at each level of the hierarchy, which can give you deeper insights into the data. If the ICC is close to zero, this would suggest that the hierarchical structure might not be providing much information beyond what you’d get with an ordinary regression.</p>
-</section>
-<section id="ordinary-regression">
-<h2>Ordinary Regression<a class="headerlink" href="#ordinary-regression" title="Permalink to this heading">#</a></h2>
-<p>In contrast, ordinary regression doesn’t account for hierarchical structure. If your ICC is zero, this might indicate that ordinary regression is sufficient for your needs since the grouping in your hierarchical data doesn’t contribute to the variance in your dependent variable.</p>
-</section>
-<section id="applications">
-<h2>Applications:<a class="headerlink" href="#applications" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><strong>Research ICCs</strong>: Given that you’re focused on analytic decisions, an ICC of 0 could simplify your analytic approach. You might find that ordinary regression models are sufficient for your research questions. Random effects models may not reveal additional nuances if the ICC is zero.</p></li>
-</ol>
-</section>
-<section id="next-steps">
-<h2>Next Steps:<a class="headerlink" href="#next-steps" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><strong>Immediate Objectives</strong>: Conduct a thorough exploratory data analysis to ensure that an ordinary regression model would be sufficient. Validate the assumptions behind ordinary regression with your data.</p></li>
-<li><p><strong>Long-term Objectives</strong>: If ordinary regression is found to be sufficient, you could focus on enriching those models with additional predictors or interaction terms to better answer your research questions.</p></li>
-</ol>
 <p>So, given that your interest lies in analytic decisions and not in rater reliability, an ICC of 0 could actually simplify your analytic strategy. It suggests that treating your data hierarchically may not provide additional benefits over a simpler ordinary regression model.</p>
-</section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="id9">
 <h1><code class="docutils literal notranslate"><span class="pre">41</span></code><a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h1>
@@ -740,6 +716,25 @@ document.write(`
 <li><p>and therein we find that two roads diverged in a wood</p></li>
 <li><p>one is the road of truth and the other is the road of fraud</p></li>
 </ul>
+</li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id11">
+<h1>43<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>come full circle these 43 years:</p>
+<ol class="arabic simple">
+<li><p>philosophy</p></li>
+<li><p>knowledge</p></li>
+<li><p>error</p></li>
+<li><p>icc</p></li>
+<li><p>back-at-one</p>
+<ul>
+<li><p>truth (amoral)</p></li>
+<li><p>fraud (moral)</p></li>
+</ul>
+</li>
+</ol>
 </li>
 </ul>
 </section>
@@ -818,15 +813,10 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">37</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">38</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">39</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">40</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchical-models">Hierarchical Models</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinary-regression">Ordinary Regression</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications">Applications:</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps:</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">40</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9"><code class="docutils literal notranslate"><span class="pre">41</span></code></a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">42</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">43</a></li>
 </ul>
 
   </nav></div>
