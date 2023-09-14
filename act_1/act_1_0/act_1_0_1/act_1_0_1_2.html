@@ -271,7 +271,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 <li class="toctree-l1 current active"><a class="current reference internal" href="#"></a></li>
-
 <li class="toctree-l1"><a class="reference internal" href="act_1_0_1_3.html"></a></li>
 
 <li class="toctree-l1"><a class="reference internal" href="act_1_0_1_4.html">.</a></li>
@@ -519,9 +518,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -537,16 +534,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">58</a></li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -558,37 +545,161 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="id2">
-<h1>58<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
-<p><em><code class="docutils literal notranslate"><span class="pre">May</span> <span class="pre">the</span> <span class="pre">fourth</span> <span class="pre">be</span> <span class="pre">with</span> <span class="pre">you!</span></code></em></p>
-<Details>
-<Summary>1. Philosophy</Summary>
-<p>(Data generating process)</p>
-<p>Agents - <span class="math notranslate nohighlight">\(F=ma\)</span></p>
-<ul class="simple">
-<li><p>gods</p></li>
-<li><p>demigods</p></li>
-<li><p>heroes</p></li>
-<li><p>villains</p></li>
-<li><p>mortals</p></li>
-</ul>
-<p>Verbs - <span class="math notranslate nohighlight">\(W=Fd\)</span></p>
-<ul class="simple">
-<li><p>create</p></li>
-<li><p>shepherd</p></li>
-<li><p>free</p></li>
-<li><p>control</p></li>
-<li><p>usurp</p></li>
-</ul>
-<p>Objects - <span class="math notranslate nohighlight">\(Credo\)</span></p>
-<ul class="simple">
-<li><p>cosmos</p></li>
-<li><p>planets 🪐</p></li>
-<li><p>life</p></li>
-<li><p>emotion</p></li>
-<li><p>social</p></li>
-</ul>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>  <span class="c1"># Updated import line</span>
+
+<span class="n">html_code</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">&lt;!DOCTYPE html&gt;</span>
+<span class="s1">&lt;html&gt;</span>
+<span class="s1">&lt;head&gt;</span>
+<span class="s1">    &lt;style&gt;</span>
+<span class="s1">        .expanded-info {</span>
+<span class="s1">            display: none;</span>
+<span class="s1">        }</span>
+<span class="s1">        span.expanded-word {</span>
+<span class="s1">            text-decoration: underline;</span>
+<span class="s1">            cursor: pointer;</span>
+<span class="s1">        }</span>
+<span class="s1">    &lt;/style&gt;</span>
+<span class="s1">    &lt;script&gt;</span>
+<span class="s1">        function toggleExpand(elementId) {</span>
+<span class="s1">            var expandedInfo = document.getElementById(elementId);</span>
+<span class="s1">            if (expandedInfo.style.display === &#39;none&#39; || expandedInfo.style.display === &#39;&#39;) {</span>
+<span class="s1">                expandedInfo.style.display = &#39;block&#39;;</span>
+<span class="s1">            } else {</span>
+<span class="s1">                expandedInfo.style.display = &#39;none&#39;;</span>
+<span class="s1">            }</span>
+<span class="s1">        }</span>
+<span class="s1">    &lt;/script&gt;</span>
+<span class="s1">    &lt;script type=&quot;text/javascript&quot; async</span>
+<span class="s1">      src=&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&quot;&gt;</span>
+<span class="s1">    &lt;/script&gt;</span>
+<span class="s1">&lt;/head&gt;</span>
+<span class="s1">&lt;body&gt;</span>
+<span class="s1">    &lt;details&gt;</span>
+<span class="s1">        &lt;summary&gt;1. Philosophy&lt;/summary&gt;</span>
+<span class="s1">        (Data generating process) &lt;br&gt;</span>
+<span class="s1">        Agents - &lt;span&gt;</span><span class="se">\\</span><span class="s1">( F=ma </span><span class="se">\\</span><span class="s1">)&lt;/span&gt;</span>
+<span class="s1">        &lt;ul&gt;</span>
+<span class="s1">            &lt;li&gt;gods&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;demigods&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;heroes&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;villains&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;mortals&lt;/li&gt;</span>
+<span class="s1">        &lt;/ul&gt;</span>
+
+<span class="s1">        Verbs - &lt;span&gt;</span><span class="se">\\</span><span class="s1">( W=Fd </span><span class="se">\\</span><span class="s1">)&lt;/span&gt;</span>
+<span class="s1">        &lt;ul&gt;</span>
+<span class="s1">            &lt;li&gt;create&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;shepherd&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;free&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;control&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;usurp&lt;/li&gt;</span>
+<span class="s1">        &lt;/ul&gt;</span>
+
+<span class="s1">        Objects - &lt;span&gt;</span><span class="se">\\</span><span class="s1">( Credo </span><span class="se">\\</span><span class="s1">)&lt;/span&gt;</span>
+<span class="s1">        &lt;ul&gt;</span>
+<span class="s1">            &lt;li&gt;cosmos&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;planets 🪐&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;life&lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;&lt;span class=&quot;expanded-word&quot; onclick=&quot;toggleExpand(&#39;emotion&#39;)&quot;&gt;emotion&lt;/span&gt;</span>
+<span class="s1">                &lt;div id=&quot;emotion&quot; class=&quot;expanded-info&quot;&gt;</span>
+<span class="s1">                    &lt;ul&gt;</span>
+<span class="s1">                        &lt;li&gt;reverence&lt;/li&gt;</span>
+<span class="s1">                        &lt;li&gt;worship&lt;/li&gt;</span>
+<span class="s1">                        &lt;li&gt;terror&lt;/li&gt;</span>
+<span class="s1">                    &lt;/ul&gt;</span>
+<span class="s1">                &lt;/div&gt;</span>
+<span class="s1">            &lt;/li&gt;</span>
+<span class="s1">            &lt;li&gt;social&lt;/li&gt;</span>
+<span class="s1">        &lt;/ul&gt;</span>
+<span class="s1">    &lt;/details&gt;</span>
+<span class="s1">&lt;/body&gt;</span>
+<span class="s1">&lt;/html&gt;</span>
+<span class="s1">&#39;&#39;&#39;</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">html_code</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .expanded-info {
+            display: none;
+        }
+        span.expanded-word {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function toggleExpand(elementId) {
+            var expandedInfo = document.getElementById(elementId);
+            if (expandedInfo.style.display === 'none' || expandedInfo.style.display === '') {
+                expandedInfo.style.display = 'block';
+            } else {
+                expandedInfo.style.display = 'none';
+            }
+        }
+    </script>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+    <details>
+        <summary>1. Philosophy</summary>
+        (Data generating process) <br>
+        Agents - <span>\( F=ma \)</span>
+        <ul>
+            <li>gods</li>
+            <li>demigods</li>
+            <li>heroes</li>
+            <li>villains</li>
+            <li>mortals</li>
+        </ul>
+
+        Verbs - <span>\( W=Fd \)</span>
+        <ul>
+            <li>create</li>
+            <li>shepherd</li>
+            <li>free</li>
+            <li>control</li>
+            <li>usurp</li>
+        </ul>
+
+        Objects - <span>\( Credo \)</span>
+        <ul>
+            <li>cosmos</li>
+            <li>planets 🪐</li>
+            <li>life</li>
+            <li><span class="expanded-word" onclick="toggleExpand('emotion')">emotion</span>
+                <div id="emotion" class="expanded-info">
+                    <ul>
+                        <li>reverence</li>
+                        <li>worship</li>
+                        <li>terror</li>
+                    </ul>
+                </div>
+            </li>
+            <li>social</li>
+        </ul>
+    </details>
+</body>
+</html>
+</div></div>
+</div>
 </Details>
 <Details>
 <Summary>2. Knowledge</Summary>
@@ -967,22 +1078,6 @@ Repeat</p>
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">58</a></li>
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
