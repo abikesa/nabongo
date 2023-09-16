@@ -1,0 +1,33 @@
+---
+title: " "
+author: " "
+date: " "
+output: pdf_document
+---
+
+02/20/23
+
+quick [\textcolor{blue}{guide}](https://jhpce.jhu.edu/knowledge-base/how-to/)
+
+0. ls -alh
+1. qrsh -l h_vmem=17G
+2. stata-mp
+3. echo stata-mp -b do  my.nber.data.do -> my.nber.data.sh
+4. qsub -l mem_free=17G,h_vmem=17G,h_fsize=17G my.nber.data.sh
+5. qstat
+
+my directories
+
+1. ssh amuzaal1@jhpce01.jhsph.edu
+2. /users/amuzaal1/ 
+3. /dcs04/legacy-dcs01-igm/segevlab/data
+4. qacct -f /cm/shared/apps/sge/sge-8.1.9/default/common/accounFng_20230220_0300.txt -j JOBID
+5. scp /users/d/desktop/my.nber.data.do amuzaal1@jhpce01.jhsph.edu:/users/amuzaal1/
+
+---
+
+d@Poseidon 1.ontology % ssh amuzaal1@jhpce01.jhsph.edu
+The authenticity of host 'jhpce01.jhsph.edu (162.129.223.101)' can't be established.
+ED25519 key fingerprint is SHA256:3AD7Yh3qWHD3nqRl22NMV1oQnMkm/38pf06tCaIr1qU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
